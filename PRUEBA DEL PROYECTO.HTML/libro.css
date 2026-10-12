@@ -1,0 +1,121 @@
+/* ================================
+   PÁGINA DE PRODUCTOS
+================================ */
+
+.productos-page {
+    padding-top: 140px;
+}
+
+.productos-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(auto-fit, minmax(250px, 1fr));
+
+    gap: 30px;
+
+    max-width: 1200px;
+
+    margin: auto;
+
+}
+
+.producto-card {
+
+    background: white;
+
+    border-radius: 18px;
+
+    overflow: hidden;
+
+    box-shadow:
+        0 10px 30px rgba(0,0,0,.12);
+
+    transition: .4s;
+
+}
+
+.producto-card:hover {
+
+    transform: translateY(-10px);
+
+    box-shadow:
+        0 20px 40px rgba(0,0,0,.20);
+
+}
+
+.producto-card img {
+
+    width: 100%;
+
+    height: 280px;
+
+    object-fit: cover;
+
+}
+
+.producto-info {
+
+    padding: 25px;
+
+}
+
+.producto-info h3 {
+
+    color: #0f172a;
+
+    font-size: 22px;
+
+    margin-bottom: 12px;
+
+}
+
+.producto-info p {
+
+    color: #666;
+
+    line-height: 1.6;
+
+    margin-bottom: 18px;
+
+}
+
+.precio {
+
+    color: #16a34a;
+
+    font-size: 25px;
+
+    font-weight: bold;
+
+    margin-bottom: 20px;
+
+}
+
+.producto-info .btn {
+
+    width: 100%;
+
+}
+
+
+/* ================================
+   PRODUCTOS EN CELULAR
+================================ */
+
+@media (max-width: 600px) {
+
+    .productos-page {
+
+        padding-top: 130px;
+
+    }
+
+    .productos-grid {
+
+        grid-template-columns: 1fr;
+
+    }
+
+}
